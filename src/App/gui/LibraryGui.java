@@ -27,6 +27,8 @@ public class LibraryGui {
     private JButton checkoutBookBtn;
     private JTextField searchTxt;
     private JButton returnBookBtn;
+    private JButton searchByGenreBtn;
+    private JButton searchBrailleBooksBtn;
     private DefaultListModel model = new DefaultListModel();
     private ListCellRenderer itemRenderer = new ItemRender();
     TextFileReaderWriter reader = new TextFileReaderWriter();
@@ -79,9 +81,43 @@ public class LibraryGui {
                 }
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
+            }
+        });
+        searchByGenreBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String userInput = searchTxt.getText();
+                SearchImplementation search = new SearchImplementation();
+                model.clear();
+                for (Book book : catalogue) {
+                    if (book.getGenre() == Genre.getEnumVersion(userInput.toLowerCase())) {
+                        model.addElement(book);
+                    }
+                    //model.addElement(book.get);
+                }
+                bookList.setCellRenderer(itemRenderer);
+                bookList.setModel(model);
 
             }
         });
+        searchBrailleBooksBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String userInput = searchTxt.getText();
+                SearchImplementation search = new SearchImplementation();
+                model.clear();
+                for (Book book : catalogue) {
+                    if (book.getBraille()) {
+                        model.addElement(book);
+                    }
+                    //model.addElement(book.get);
+                }
+                bookList.setCellRenderer(itemRenderer);
+                bookList.setModel(model);
+
+            }
+        });
+
         exitBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -120,7 +156,7 @@ public class LibraryGui {
         });
         //checkout item
         //dialog prompts user to tpe the name and author of the book. dialog works similar to the add book dialog.
-        //search for the book among the books that are currently on shelf and change status to checked out.
+        //search for the book among the books that are currently on shelf or reserved and change status to checked out.
         checkoutBookBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

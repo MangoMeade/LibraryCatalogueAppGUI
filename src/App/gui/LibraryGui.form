@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="App.gui.LibraryGui">
   <grid id="27dc6" binding="base" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="897" height="596"/>
+      <xy x="20" y="20" width="1262" height="596"/>
     </constraints>
     <properties>
       <font style="1"/>
@@ -45,7 +45,7 @@
       </component>
       <component id="27066" class="javax.swing.JButton" binding="exitBtn">
         <constraints>
-          <grid row="7" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.25"/>
         </constraints>
         <properties>
@@ -75,7 +75,7 @@
       </component>
       <component id="a69be" class="javax.swing.JButton" binding="addItemBtn">
         <constraints>
-          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -93,7 +93,7 @@
       </component>
       <scrollpane id="c7908">
         <constraints>
-          <grid row="4" column="2" row-span="5" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="7" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties/>
@@ -105,15 +105,6 @@
           </component>
         </children>
       </scrollpane>
-      <component id="2f147" class="javax.swing.JTextField" binding="searchTxt">
-        <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties/>
-      </component>
       <component id="ad4da" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -125,7 +116,7 @@
       </component>
       <component id="7c69d" class="javax.swing.JButton" binding="returnBookBtn">
         <constraints>
-          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="2.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -134,11 +125,38 @@
       </component>
       <component id="1780c" class="javax.swing.JButton" binding="checkoutBookBtn">
         <constraints>
-          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
           <gridbag weightx="2.0" weighty="0.0"/>
         </constraints>
         <properties>
           <text value="Checkout Book"/>
+        </properties>
+      </component>
+      <component id="2f147" class="javax.swing.JTextField" binding="searchTxt">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="40542" class="javax.swing.JButton" binding="searchByGenreBtn">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.25" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Search by Genre"/>
+        </properties>
+      </component>
+      <component id="2c75e" class="javax.swing.JButton" binding="searchBrailleBooksBtn">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.25" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Search Braille Books"/>
         </properties>
       </component>
     </children>
