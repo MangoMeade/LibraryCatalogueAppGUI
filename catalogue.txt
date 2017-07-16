@@ -1,18 +1,18 @@
 A Song of Fire and Ice, George R.R. Martin,07/29/2017,false,On Shelf,Fiction
 Romeo and Juliet,Shakespeare,07/27/2017,true,Reserved,Fiction
-How They Croaked: The Awful Ends of the Awfully Famous,Georgia Bragg,07/08/2017,true,On Shelf,Nonfiction
+How They Croaked: The Awful Ends of the Awfully Famous,Georgia Bragg,07/30/2017,true,Checked Out,Nonfiction
 Blue Hat Green Hat,Sandra Boynton,07/27/2017,true,Reserved,Fiction
 Keeping London,Ellie Wade,07/29/2017,false,Checked Out,Fiction
 Catching Fire,Suzanne Collings,07/28/2017,true,On Shelf,Fiction
 A Clash of Kings,George RR Martin,07/28/2017,false,On Shelf,Fiction
-Hamlett,Shakespeare,07/28/2017,true,On Shelf,Fiction
+Hamlett,Shakespeare,07/30/2017,true,Checked Out,Fiction
 I am Malala,Malala Yousafzai,07/27/2017,false,Reserved,Historical
 Mechanics of Materials,James Barber,07/29/2017,false,Checked Out,Nonfiction
 Hidden Figures,Margot Lee Shetterly,07/28/2017,false,On Shelf,Nonfiction
 The Elements of Style,William Strunk,07/29/2017,false,On Shelf,Nonfiction
 A Christmas Carol,Charles Dickens,07/28/2017,false,On Shelf,Historical
-All Quiet on the Western Front,Erich Maria Remarque,07/28/2017,true,On Shelf,Historical
-A Farewell to Arms,Ernest Hemingway,07/14/2017,false,On Shelf,Historical
+All Quiet on the Western Front,Erich Maria Remarque,07/30/2017,true,On Shelf,Historical
+A Farewell to Arms,Ernest Hemingway,07/30/2017,false,Checked Out,Historical
 Bossypants,Tina Fey,07/14/2017,false,On Shelf,Biographical
 Steve Jobs,Walter Isaacson,07/14/2017,false,On Shelf,Biographical
 Death of a Salesman,Arthur Miller,07/14/2017,true,On Shelf,Drama
@@ -25,3 +25,5 @@ All the Light We Cannot See,Anthony Boerr,07/30/2017,false,Checked Out,Historica
 Are You My Mother,P.D. Eastman,07/16/2017,true,On Shelf,Fiction
 The Da Vinci Code,Dan Brown,07/16/2017,false,On Shelf,Fiction
 And Then There Were None,Agatha Christie,07/16/2017,false,On Shelf,Mystery
+The Three Musketeers,Alexander Dumas,07/30/2017,false,Checked Out,Fiction
+War and Peace,Leo Tolstoy,07/16/2017,false,On Shelf,Historical

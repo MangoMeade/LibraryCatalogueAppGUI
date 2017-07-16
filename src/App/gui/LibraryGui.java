@@ -31,12 +31,11 @@ public class LibraryGui {
     private ListCellRenderer itemRenderer = new ItemRender();
     TextFileReaderWriter reader = new TextFileReaderWriter();
     ArrayList<Book> catalogue = reader.readFromCatalogue();
-    SearchImplementation search = new SearchImplementation();
     ReturnImplementation returnImp = new ReturnImplementation();
     CheckoutImplementation checkImp = new CheckoutImplementation();
-    String userInput = searchTxt.getText();
 
     public LibraryGui() {
+        reader.fileWriter(catalogue);
         displayBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,7 +44,6 @@ public class LibraryGui {
                     model.addElement(book);
 
                 }
-                //model.addElement(new Book("Moo Ba Lalala", "Sandra Boynton", LocalDate.parse("2017-12-12"), true, App.Status.getEnumVersion("Checked Out"), App.Genre.getEnumVersion("Historical")));
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
             }
@@ -60,7 +58,6 @@ public class LibraryGui {
                     if ((book.getAuthor().toLowerCase()).contains(userInput.toLowerCase())) {
                         model.addElement(search.checkContainsGUI(book, userInput.toLowerCase()));
                     }
-                    //model.addElement(book.get);
                 }
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
@@ -101,8 +98,6 @@ public class LibraryGui {
                 //get book object from add book dialog
                 Book result = addBook.getResult();
                 reader.fileWriter(result);
-                reader.fileWriter(catalogue);
-                //catalogue.add(result);
                 //add book result to text file
             }
         });
@@ -118,10 +113,6 @@ public class LibraryGui {
                 returnBook.setVisible(true);
                 Book result = returnBook.getResult();
                 for (Book book : catalogue) {
-//                    if ((book.getTitle().toLowerCase().equalsIgnoreCase(result.getTitle().toLowerCase())) && (book.getAuthor().toLowerCase().equalsIgnoreCase(result.getAuthor().toLowerCase()))) {
-//                     //if (book.getTitle().toLowerCase().equalsIgnoreCase(result.getTitle().toLowerCase())) {
-//                        book.setStatus(Status.ON_SHELF);
-//                    }
                     returnImp.returnToShelfGUI(result, book);
                 }
                 reader.fileWriter(catalogue);
