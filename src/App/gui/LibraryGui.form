@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="App.gui.LibraryGui">
+  <grid id="27dc6" binding="base" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="897" height="596"/>
+    </constraints>
+    <properties>
+      <font style="1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <hspacer id="d153d">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+      </hspacer>
+      <component id="26085" class="javax.swing.JLabel" binding="logo">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d6176" class="javax.swing.JLabel" binding="titleTxt">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="AR BLANCA" size="28" style="1"/>
+          <text value="Library Terminal App"/>
+        </properties>
+      </component>
+      <component id="db5f4" class="javax.swing.JButton" binding="searchByAuthorBtn">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.25" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Search By Author"/>
+        </properties>
+      </component>
+      <component id="27066" class="javax.swing.JButton" binding="exitBtn">
+        <constraints>
+          <grid row="7" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <component id="b7355" class="javax.swing.JLabel" binding="bannerImg" custom-create="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <maximumSize width="0" height="0"/>
+          <minimumSize width="400" height="200"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="445d3" class="javax.swing.JButton" binding="displayBtn">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.25" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <alignmentY value="0.2"/>
+          <text value="Display Book List"/>
+        </properties>
+      </component>
+      <component id="a69be" class="javax.swing.JButton" binding="addItemBtn">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Add Book"/>
+        </properties>
+      </component>
+      <component id="effa" class="javax.swing.JButton" binding="searchByTitleBtn">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.25" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Search By Title Keyword"/>
+        </properties>
+      </component>
+      <scrollpane id="c7908">
+        <constraints>
+          <grid row="4" column="2" row-span="5" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="6d076" class="javax.swing.JList" binding="bookList" custom-create="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="2f147" class="javax.swing.JTextField" binding="searchTxt">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ad4da" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Search Box"/>
+        </properties>
+      </component>
+      <component id="7c69d" class="javax.swing.JButton" binding="returnBookBtn">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="2.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Return Book"/>
+        </properties>
+      </component>
+      <component id="1780c" class="javax.swing.JButton" binding="checkoutBookBtn">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="2.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Checkout Book"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
