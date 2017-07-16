@@ -101,8 +101,6 @@ public class LibraryGui {
                 //get book object from add book dialog
                 Book result = addBook.getResult();
                 reader.fileWriter(result);
-                reader.fileWriter(catalogue);
-                //catalogue.add(result);
                 //add book result to text file
             }
         });
