@@ -101,6 +101,7 @@ public class SearchImplementation {
         return match;
     }
 
+    //if book contains searchString  choosenBook is displated in the GUI
     public Book checkContainsGUI(Book book, String searchString) {
         TextFileReaderWriter reader = new TextFileReaderWriter();
         ArrayList<Book> catalogue = reader.readFromCatalogue();
@@ -118,6 +119,7 @@ public class SearchImplementation {
         return choosenBook;
 
     }
+
 
 
     //Print to console any books with genre that equals the search string:

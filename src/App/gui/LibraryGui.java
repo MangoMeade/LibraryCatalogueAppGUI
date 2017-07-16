@@ -50,6 +50,8 @@ public class LibraryGui {
                 bookList.setModel(model);
             }
         });
+
+        //search by author
         searchByAuthorBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -57,6 +59,7 @@ public class LibraryGui {
                 SearchImplementation search = new SearchImplementation();
                 model.clear();
                 for (Book book : catalogue) {
+                    //if book author in catalogue matches a  keyword given by the user the book will be shown in the GUI
                     if ((book.getAuthor().toLowerCase()).contains(userInput.toLowerCase())) {
                         model.addElement(search.checkContainsGUI(book, userInput.toLowerCase()));
                     }
@@ -66,23 +69,26 @@ public class LibraryGui {
 
             }
         });
-        searchByTitleBtn.addActionListener(new ActionListener() {
 
+        //search by title
+        searchByTitleBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String userInput = searchTxt.getText();
                 SearchImplementation search = new SearchImplementation();
                 model.clear();
                 for (Book book : catalogue) {
+                    //if book title in catalogue matches a  keyword given by the user the book will be shown in the GUI
                     if ((book.getTitle().toLowerCase()).contains(userInput.toLowerCase())) {
                         model.addElement(search.checkContainsGUI(book, userInput.toLowerCase()));
                     }
-                    //model.addElement(book.get);
                 }
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
             }
         });
+
+        //GUI shows the books with the genre specified by user
         searchByGenreBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -93,24 +99,22 @@ public class LibraryGui {
                     if (book.getGenre() == Genre.getEnumVersion(userInput.toLowerCase())) {
                         model.addElement(book);
                     }
-                    //model.addElement(book.get);
                 }
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
 
             }
         });
+
+        //GUI shows braille books only
         searchBrailleBooksBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String userInput = searchTxt.getText();
-                SearchImplementation search = new SearchImplementation();
                 model.clear();
                 for (Book book : catalogue) {
                     if (book.getBraille()) {
                         model.addElement(book);
                     }
-                    //model.addElement(book.get);
                 }
                 bookList.setCellRenderer(itemRenderer);
                 bookList.setModel(model);
