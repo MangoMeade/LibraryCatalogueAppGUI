@@ -65,11 +65,11 @@ public class CheckoutBookDialog extends JDialog {
         String author = bookAuthor.getText();
         String genre = bookGenre.getText().toLowerCase();
         String braille = bookBraille.getText();
-        Boolean booleanBraille;
+        Boolean booleanBraille = false;
         if (braille.equalsIgnoreCase("yes")) {
             booleanBraille = true;
         }
-        else {
+        else if (braille.equalsIgnoreCase("no")) {
             booleanBraille = false;
         }
         //set assign book object to result member variable
